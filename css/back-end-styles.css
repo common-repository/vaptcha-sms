@@ -1,0 +1,289 @@
+/* File that contains back-end styling for elements */
+
+/**
+////////////////////////////////////////
+*   Heading Styling
+////////////////////////////////////////
+**/
+
+/* .vaptcha-wrap h1 {
+	margin: .2em 200px 0 0;
+	padding: 0;
+	color: #32373c;
+	line-height: 1.2em;
+	font-size: 2.8em;
+	font-weight: 400;
+} */
+
+.vaptcha-wrap h2 {
+	margin: .2em 0 0 15px !important;
+	padding: 0;
+	color: #00103F !important;
+	line-height: 1.2em;
+	font-size: 24px !important;
+	font-weight: 400;
+}
+
+/**
+////////////////////////////////////////
+*   Branding Styling
+////////////////////////////////////////
+**/
+.vaptcha-wrap {
+	position: relative;
+	margin: 25px 40px 0 20px;
+	font-size: 15px;
+}
+
+.vaptcha-wrap .vaptcha-about-text {
+	margin: 10px 0 0 15px;
+	min-height: 20px;
+	color: #00103F;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.vaptcha-wrap .vaptcha-badge {
+	border-radius: 5px;
+}
+
+.vaptcha-wrap .vaptcha-header {
+	display: flex;
+}
+
+.vaptcha-wrap .vaptcha-badge {
+	background-image: url(../images/vaptcha-logo.png);
+	margin: 5px 0 0;
+	padding-top: 0;
+	height: 60px;
+	display: inline-block;
+	width: 60px;
+	text-rendering: optimizeLegibility;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.vaptcha-wrap .deadline {
+	height: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+/**
+////////////////////////////////////////
+*   vaptcha Form Styling
+////////////////////////////////////////
+**/
+
+.vaptcha-wrap form {
+	margin-top: 15px;
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.vaptcha-wrap input[type="text"] {
+	box-shadow: inset 1px 3px 2px rgba(180, 137, 209, 0.05) !important;
+	min-height: 35px;
+	width: 62%;
+	text-indent: 5px;
+	border-radius: 5px;
+}
+
+
+.vaptcha-wrap .form-table tr td:nth-child(3) {
+	text-align: right;
+}
+
+.vaptcha-wrap .form-table th {
+	width: 140px !important;
+	padding: 15px 10px 15px 0 !important;
+	vertical-align: middle; 
+	text-align: right;
+	font-weight: normal !important;
+}
+
+.vaptcha-wrap .form-table td {
+	padding: 0 10px !important;
+}
+
+.vaptcha-wrap .form-table td.descript {
+	color: #999;
+}
+
+.vaptcha-wrap .form-table .form-title {
+	font-size: 16px;
+	color: #333;
+	font-weight: 700 !important;
+}
+
+.vaptcha-wrap p.submit {
+	text-align: right;
+}
+
+.vaptcha-wrap p.submit input {
+	padding: 6px 20px !important;
+}
+
+.vaptcha-wrap p.get-vaptcha-key {
+	background: #F9FBFF;
+	border: 1px solid #e5e5e5;
+	color: #737384;
+	padding: 10px;
+	display: block;
+	max-width: 100%;
+	margin: 10px auto;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.vaptcha-wrap p.get-vaptcha-key a {
+	padding-left: 5px;
+}
+
+.vaptcha-wrap .vaptcha-radio-field-wrapper {
+	margin-left: 2px;
+}
+/**
+////////////////////////////////////////
+*   vaptcha Field Type :: Radio Default
+////////////////////////////////////////
+**/
+
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+.vaptcha-wrap input[type=radio] {
+	display: none;
+	margin: 10px;
+}
+
+/* Change the look'n'feel of labels (which are adjacent to radiobuttons). Add some margin, padding to label */
+.vaptcha-wrap input[type=radio] + label {
+	display: inline-block;
+	margin: -2px;
+	padding: 4px 12px;
+	background-color: #e7e7e7;
+	border-color: #ddd;
+	min-width: 125px;
+}
+
+.vaptcha-wrap input[type=radio] + label:first-of-type {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.vaptcha-wrap input[type=radio] + label:last-of-type {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-left: -10px !important;
+}
+
+/* Change background color for label next to checked radio button to make it look like highlighted button */
+.vaptcha-wrap input[type=radio]:checked + label {
+	background-image: none;
+	background-color: #d0d0d0;
+}
+
+.vaptcha-wrap input[type=radio] {
+	display: none;
+}
+
+.vaptcha-wrap input[type=radio] + label {
+	display: inline-block;
+	margin: -2px;
+	padding: 4px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+	background-repeat: repeat-x;
+	border: 1px solid #ccc;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-bottom-color: #b3b3b3;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.vaptcha-wrap input[type=radio]:checked + label {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+	background-color: #e0e0e0;
+}
+
+/**
+////////////////////////////////////////
+*   vaptcha Field Type :: Checkbox
+////////////////////////////////////////
+**/
+
+.vaptcha-wrap .vaptcha-checkbox-wrapper {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.vaptcha-wrap .vaptcha-checkbox-wrapper input[type="checkbox"] {
+	margin: 0 4px 0 0;
+}
+
+.vaptcha-wrap .vaptcha-checkbox-wrapper label {
+	padding-left: 2px;
+}
+
+/*选择国别码css*/
+.flex{
+	display: flex;
+	align-items: center;
+}
+.area-code {
+	width: 90px;
+	height: 33px;
+	border: 1px solid #dadada;
+	border-right: none;
+	border-radius: 5px 0 0 5px;
+}
+.add{
+	color: #cccccc;
+	font-size: 18px;
+	padding: 0 3px;
+}
+.form-control{
+	min-height: 32px!important;
+}
+.form-control:focus{
+	outline:medium!important;
+}
+.dropdown-menu{
+	position: relative;
+	border: 1px #8c8f94 solid;
+	background: white;
+	z-index: 1000;
+	text-align: center;
+	padding: 5px 0;
+}
+.dropdown-menu li {
+	list-style:none;
+	cursor: pointer;
+	line-height: 25px;
+	font-size: 15px;
+}
+.dropdown-menu li:hover{
+	background: #f1efef;
+}
